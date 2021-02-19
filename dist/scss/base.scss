@@ -1,0 +1,69 @@
+// Colors
+$main-bg: rgb(0, 0, 0);
+$secondary-bg: rgb(28, 28, 30);
+$main-color: rgb(0, 255, 200);
+$main-text: rgb(219, 215, 215);
+$secondary-text: rgb(168, 162, 162);
+
+// Fonts
+$main-font: 'Lexend Mega', sans-serif;
+$secondary-font: 'Play', sans-serif;
+$third-font: 'Lato', sans-serif;
+
+// Transitions
+@mixin transition-1 {
+    transition: all .05s ease-in-out;
+}
+
+@mixin transition-2 {
+    transition: all .5s ease-in-out;
+}
+
+@mixin transition-3 {
+    transition: .15s;
+}
+
+@mixin transition-4 {
+    transition: all 2s ease-in-out;
+}
+
+@mixin transition-5 {
+    transition: all 1s ease-in-out;
+}
+
+// Breakpoints
+@mixin media-sm {
+    @media screen and (max-width: 699px) {
+        @content;
+    }
+}
+
+@mixin media-tablet {
+    @media screen and (min-width: 700px) and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin media-md {
+    @media screen and (min-width: 768px) and (max-width : 1023px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 1023px) {
+        @content;
+    }
+}
+
+@mixin media-height-1 {
+    @media screen and (min-height: 800px) {
+        @content;
+    }
+}
+
+@mixin media-height-2 {
+    @media screen and (max-height: 450px) {
+        @content;
+    }
+}

@@ -1,0 +1,140 @@
+@import './base';
+
+header {
+    background-color: $secondary-bg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 102;
+    width: 100vw;
+    -webkit-tap-highlight-color: transparent;
+    @include transition-5;
+
+    .mobile-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 91%;
+
+        &__logo img {
+            position: relative;
+            z-index: 103;
+            width: 4rem;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .header-btn-container {
+            display: flex;
+            align-items: center;
+
+            .header-settings {
+                width: 1rem;
+                margin-right: 1em;
+                padding-top: .2em;
+                cursor: pointer;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .nav-btn {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 3rem;
+            height: 2rem;
+            @include transition-2;
+            cursor: pointer;
+            z-index: 103;
+            -webkit-tap-highlight-color: transparent;
+
+            .hamburger {
+                width: 25px;
+                height: 3px;
+                background-color: $main-color;
+                @include transition-2;
+                cursor: pointer;
+
+                &::before,
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 25px;
+                    height: 3px;
+                    background-color: $main-color;
+                    @include transition-2;
+                }
+
+                &::before {
+                    transform: translateY(8px);
+                }
+
+                &::after {
+                    transform: translateY(-8px);
+                }
+            }
+        }
+        .nav-btn.open .hamburger {
+            transform: translateX(-50px);
+            background: transparent;
+            box-shadow: none;
+
+            &::before {
+                transform: rotate(45deg) translate(35px, -35px);
+            }
+
+            &::after {
+                transform: rotate(-45deg) translate(35px, 35px);
+            }
+        }
+    }
+    .mobile-menu-modal {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0);
+        position: fixed;
+        left: 0;
+        top: 0;
+        transform: translateY(-100%);
+        @include transition-5;
+
+        .mobile-menu {
+            width: 100vw;
+            height: 30rem;
+            background-color: $main-bg;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .nav-menu {
+                display: flex;
+                flex-direction: column;
+                height: 15rem;
+                justify-content: space-between;
+
+                &__link {
+                    color: $main-text;
+                    text-transform: uppercase;
+                    font-family: $main-font;
+                    text-decoration: none;
+                    -webkit-tap-highlight-color: transparent;
+                }
+
+                #mobile-link-5 {
+                    border: solid 1px $main-color;
+                    text-align: center;
+                    padding: 1em 2em;
+                }
+            }
+        }
+    }
+    .show-nav {
+        transform: translateY(0%);
+    }
+}
+
+

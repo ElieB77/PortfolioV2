@@ -1,0 +1,247 @@
+#about {
+  padding-top: 7em;
+}
+
+#about .about-heading__hr {
+  background-color: #00ffc8;
+  border: none;
+  height: 2px;
+  width: 30%;
+}
+
+#about .about-heading__h2 {
+  color: #dbd7d7;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  margin-top: -.6em;
+}
+
+#about .about-profile {
+  text-align: center;
+  margin-top: 3em;
+}
+
+#about .about-profile img {
+  width: 10rem;
+}
+
+#about .about-text-container {
+  margin-top: 3em;
+}
+
+#about .about-text-container .about-text {
+  padding: 0 1em;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+#about .about-text-container .about-text__p {
+  color: #a8a2a2;
+  font-family: "Play", sans-serif;
+}
+
+#about .about-text-container .about-text__p a {
+  color: #a8a2a2;
+  text-decoration: none;
+  border-bottom: solid 3px #00ffc8;
+}
+
+#about .about-skills-card {
+  border-bottom: solid 2px #00ffc8;
+  border-right: solid 2px #00ffc8;
+  width: 15rem;
+  height: 15rem;
+  text-align: center;
+  margin: 2em auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 4em;
+}
+
+#about .about-skills-card .about-skills-card-img {
+  width: 10rem;
+  padding-bottom: .5em;
+}
+
+#about .about-skills-card .about-skills-card-img img {
+  width: 100%;
+  display: block;
+}
+
+#about .about-skills-card .about-skills-card-img .image-skills-effect {
+  margin-top: -2em;
+  position: absolute;
+  opacity: .2;
+  animation: card-effect 2s linear infinite alternate-reverse;
+}
+
+#about .about-skills-card .about-card-hr {
+  width: 90%;
+  border: solid 0.1px rgba(219, 215, 215, 0.05);
+  margin: 1em 0;
+}
+
+#about .about-skills-card .about-skills-card-h3 {
+  padding-top: .5em;
+  color: #a8a2a2;
+  font-family: "Play", sans-serif;
+}
+
+#about .about-skills-card .about-skills-card-h3 i {
+  color: #00ffc8;
+  font-size: .8rem;
+  padding-right: .5em;
+}
+
+#about .about-card-2 {
+  border-bottom: solid 2px #00ffc8;
+  border-left: solid 2px #00ffc8;
+  width: 15rem;
+  height: 15rem;
+  text-align: center;
+  margin: 2em auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 2.5em;
+  margin-top: 5em;
+}
+
+#about .about-card-2 .about-card-img-2 {
+  width: 10rem;
+  padding-bottom: .5em;
+}
+
+#about .about-card-2 .about-card-img-2 img {
+  width: 100%;
+  display: block;
+}
+
+#about .about-card-2 .about-card-img-2 .image-skills-effect-2 {
+  margin-top: -6em;
+  position: absolute;
+  opacity: .15;
+  animation: card-effect-2 1s infinite alternate-reverse;
+}
+
+#about .about-card-2 .about-card-hr {
+  width: 90%;
+  border: solid 0.1px rgba(219, 215, 215, 0.05);
+  margin: 1em 0;
+}
+
+#about .about-card-2 .about-card-h3-2 {
+  padding-top: .5em;
+  color: #a8a2a2;
+  font-family: "Play", sans-serif;
+}
+
+#about .about-card-2 .about-card-h3-2 i {
+  color: #00ffc8;
+  font-size: .8rem;
+  padding-right: .5em;
+}
+
+@-webkit-keyframes card-effect {
+  0% {
+    bottom: 0%;
+    left: 0%;
+  }
+  25% {
+    bottom: 5%;
+    left: 5%;
+  }
+  75% {
+    bottom: 0%;
+    left: 0%;
+  }
+  100% {
+    bottom: 5%;
+    left: 5%;
+  }
+}
+
+@keyframes card-effect {
+  0% {
+    bottom: 0%;
+    left: 0%;
+  }
+  25% {
+    bottom: 5%;
+    left: 5%;
+  }
+  75% {
+    bottom: 0%;
+    left: 0%;
+  }
+  100% {
+    bottom: 5%;
+    left: 5%;
+  }
+}
+
+@-webkit-keyframes card-effect-2 {
+  0% {
+    right: 4%;
+  }
+  20% {
+    left: 4%;
+  }
+  40% {
+    bottom: 2%;
+  }
+  60% {
+    right: 4%;
+  }
+  80% {
+    left: 2%;
+  }
+  100% {
+    bottom: 1%;
+  }
+}
+
+@keyframes card-effect-2 {
+  0% {
+    right: 4%;
+  }
+  20% {
+    left: 4%;
+  }
+  40% {
+    bottom: 2%;
+  }
+  60% {
+    right: 4%;
+  }
+  80% {
+    left: 2%;
+  }
+  100% {
+    bottom: 1%;
+  }
+}
+/*# sourceMappingURL=about.css.map */

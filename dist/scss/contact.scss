@@ -1,0 +1,101 @@
+@import './base';
+
+#contact {
+    padding-top: 7em;
+    padding-bottom: 7em;
+
+    .contact-heading {
+
+        &__hr {
+            background-color: $main-color;
+            border: none;
+            height: 2px;
+            width: 30%;
+        }
+
+        &__h2 {
+            color: $main-text;
+            text-transform: uppercase;
+            font-family: $third-font;
+            text-align: center;
+            margin-top: -.6em;
+        }
+    }
+
+    .contact-text {
+        margin: 3em auto 0 auto;
+        width: 20rem;
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        width: 18rem;
+        margin: 4em auto 0 auto;
+        border-top: solid 2px $secondary-text;
+        border-left: solid 2px $secondary-text;
+        padding: 2em;
+
+        input {
+            border: none;
+            border-bottom: 1px solid $main-color;
+            background-color: $secondary-bg;
+            outline: none;
+            padding: 1em;
+            color: $main-text;
+            font-family: $secondary-font;
+            font-size: 1rem;
+        }
+
+        .error-message {
+            color: rgb(255, 0, 0);
+            display: none;
+            text-align: left;
+            margin-left: 1em;
+        }
+
+        ::placeholder {
+            color: $main-text;
+        }
+
+        textarea {
+            height: 7rem;
+            resize: none;
+            outline: none;
+            background-color: $secondary-bg;
+            border: none;
+            border-bottom: solid 1px $main-color;
+            border-left: solid 1px $main-color;
+            color: $main-text;
+            font-family: $secondary-font;
+            padding: .5em 1em;
+            font-size: 1rem;
+            margin-top: 4em;
+        }
+
+        .error-message-text {
+            color: rgb(255, 0, 0);
+            display: none;
+            text-align: left;
+            margin-left: 1em;
+        }
+
+        button {
+            background-color: $main-bg;
+            color: $main-text;
+            font-family: $secondary-font;
+            outline: none;
+            border: solid 1px $main-color;
+            font-size: 1rem;
+            padding: 1em;
+            width: 10rem;
+            margin: auto;
+            margin-top: 1em;
+            cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
+        }
+    }
+}

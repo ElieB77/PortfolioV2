@@ -1,0 +1,116 @@
+#contact {
+  padding-top: 7em;
+  padding-bottom: 7em;
+}
+
+#contact .contact-heading__hr {
+  background-color: #00ffc8;
+  border: none;
+  height: 2px;
+  width: 30%;
+}
+
+#contact .contact-heading__h2 {
+  color: #dbd7d7;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  margin-top: -.6em;
+}
+
+#contact .contact-text {
+  margin: 3em auto 0 auto;
+  width: 20rem;
+  text-align: center;
+}
+
+#contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 18rem;
+  margin: 4em auto 0 auto;
+  border-top: solid 2px #a8a2a2;
+  border-left: solid 2px #a8a2a2;
+  padding: 2em;
+}
+
+#contact form input {
+  border: none;
+  border-bottom: 1px solid #00ffc8;
+  background-color: #1c1c1e;
+  outline: none;
+  padding: 1em;
+  color: #dbd7d7;
+  font-family: "Play", sans-serif;
+  font-size: 1rem;
+}
+
+#contact form .error-message {
+  color: red;
+  display: none;
+  text-align: left;
+  margin-left: 1em;
+}
+
+#contact form ::-webkit-input-placeholder {
+  color: #dbd7d7;
+}
+
+#contact form :-ms-input-placeholder {
+  color: #dbd7d7;
+}
+
+#contact form ::-ms-input-placeholder {
+  color: #dbd7d7;
+}
+
+#contact form ::placeholder {
+  color: #dbd7d7;
+}
+
+#contact form textarea {
+  height: 7rem;
+  resize: none;
+  outline: none;
+  background-color: #1c1c1e;
+  border: none;
+  border-bottom: solid 1px #00ffc8;
+  border-left: solid 1px #00ffc8;
+  color: #dbd7d7;
+  font-family: "Play", sans-serif;
+  padding: .5em 1em;
+  font-size: 1rem;
+  margin-top: 4em;
+}
+
+#contact form .error-message-text {
+  color: red;
+  display: none;
+  text-align: left;
+  margin-left: 1em;
+}
+
+#contact form button {
+  background-color: black;
+  color: #dbd7d7;
+  font-family: "Play", sans-serif;
+  outline: none;
+  border: solid 1px #00ffc8;
+  font-size: 1rem;
+  padding: 1em;
+  width: 10rem;
+  margin: auto;
+  margin-top: 1em;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+/*# sourceMappingURL=contact.css.map */

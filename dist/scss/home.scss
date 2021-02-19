@@ -1,0 +1,111 @@
+@import './base';
+
+#home {
+    padding-top: 8em;
+    height: 100vh;
+
+    .home-lines {
+        width: 18rem;
+        height: 10rem;
+        border-top: solid 2px $main-color; 
+        border-left: solid 2px $main-color; 
+        margin: auto
+    }
+
+    .home-text {
+        text-align: center;
+        margin-top: -9em;
+
+        &__h1 {
+            text-transform: uppercase;
+            font-family: $third-font;
+            color: $main-text;
+            word-spacing: .5rem;
+            letter-spacing: .1rem;
+        }
+
+        &__p {
+            font-family: $secondary-font;
+            color: $main-text;
+            font-size: 1rem;
+        }
+    }
+
+    .home-socials {
+        width: 10rem;
+        height: 13rem;
+        border-top: solid 3px $main-text;
+        border-right: solid 3px $main-text;
+        margin: 3em auto 0 auto;
+        display: flex;
+        flex-direction: column;
+        padding: .5em;
+
+        &__1 {
+            text-decoration: none;
+            font-family: $secondary-font;
+            position: relative;
+            float: right;
+            color: $main-text;
+            margin-bottom: 2em;
+            margin-left: 4em;
+            border-bottom: 1.5px solid $main-color;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        &__2 {
+            text-decoration: none;
+            font-family: $secondary-font;
+            position: relative;
+            float: right;
+            color: $main-text;
+            margin-left: 4em;
+            border-bottom: 1.5px solid $main-color;
+            -webkit-tap-highlight-color: transparent;
+        }
+    }
+
+    .home-contact-btn {
+        text-decoration: none;
+        color: $main-text;
+        font-family: $secondary-font;
+        border: solid 1px $main-color;
+        background-color: $main-bg;
+        padding: 1em;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: -4em 0 0 3.6em;
+        white-space: nowrap;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .home-scroll {
+        width: fit-content;
+        margin-left: 2em;
+        display: flex;
+        position: absolute;
+        bottom: 4em;
+
+        &__animation {
+            border-radius: 50%;
+            background-color: $main-text;
+            width: 10px;
+            height: 10px;
+            animation: bounce .8s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            margin-right: .5em;
+        }
+
+        &__p {
+            color: $main-text;
+            font-family: $secondary-font;
+        }
+    }
+}
+
+@keyframes bounce {
+    0% {transform: translateY(15px); background-color: $main-bg; }
+    100% {transform: translateY(-10px); background-color: $main-text;}
+}

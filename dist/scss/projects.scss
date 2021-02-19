@@ -1,0 +1,232 @@
+@import './base';
+
+#projects {
+    padding-top: 7em;
+
+    .projects-heading {
+
+        &__h2 {
+            color: $main-text;
+            text-transform: uppercase;
+            font-family: $third-font;
+            text-align: center;
+        }
+
+        &__hr {
+            background-color: $main-color;
+            border: none;
+            height: 2px;
+            width: 30%;
+            float: right;
+            margin-top: -.8em;
+        }
+    }
+
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3em;
+
+        .project {
+            width: 20rem;
+            margin-bottom: 2.5em;
+            cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
+            
+            &__img {
+                object-fit: contain;
+                max-width: 100%;
+                display: block;
+            }
+
+            &__h3 {
+                text-align: center;
+                color: $main-text;
+                font-family: $secondary-font;
+                padding-top: 1em;
+
+                i {
+                    padding-right: .5em;
+                    color: $main-color;
+                }
+            }
+        }
+    }
+    .projects-modal {
+        width: 100vw;
+        height: 100vh;
+        background-color: $secondary-bg;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 103;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+        overflow-y: hidden;
+        transform: scale(0);
+        opacity: 0;
+        @include transition-2;
+
+        .modal {
+            width: 100vw;
+            height: 100vh;
+            padding: 2em 2em;
+            overflow: auto;
+
+            &__next {
+                border: solid 1px $main-color;
+                outline: none;
+                background-color: $main-bg;
+                padding: .5em 1em;
+                color: $main-text;
+                font-family: $secondary-font;
+                cursor: pointer;
+                -webkit-tap-highlight-color: transparent;
+
+            }
+
+            &__close {
+                border: none;
+                outline: none;
+                color: $main-color;
+                float: right;
+                background-color: $secondary-bg;
+                margin-top: .3em;
+                cursor: pointer;
+                -webkit-tap-highlight-color: transparent;
+
+                i {
+                    font-size: 1.5rem;
+                }
+            }
+
+            &__title {
+                color: $main-text;
+                font-family: $secondary-font;
+                text-align: center;
+                margin-top: 2em;
+            }
+
+            &__about {
+                border-left: solid 1px rgba($main-text, .2);
+                border-top: solid 1px rgba($main-text, .2);
+                padding: .5em;
+                margin-top: 1em;
+
+                a {
+                    color: $main-color;
+                    text-decoration: none;
+                    border-bottom: solid 1px $main-color ;
+                    -webkit-tap-highlight-color: transparent;
+                }
+            }
+
+            &__stack {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                margin-top: 3em;
+                border-top: solid .5px rgba($main-text, .2);
+                border-bottom: solid .5px rgba($main-text, .2);
+                padding: 1em 0 1em 0;
+
+                i {
+                    font-size: 1.5rem;
+                    -webkit-tap-highlight-color: transparent;
+                }
+
+                .html5 {
+                    color: #F16529;
+                }
+
+                .sass {
+                    color: #CF649A;
+                }
+
+                .js {
+                    color: #F7DF1E;
+                }
+
+                .figma {
+                    color: $main-text;
+                }
+
+                .git {
+                    color: #F05033;
+                }
+            }
+
+            &__btn {
+                text-align: center;
+                margin-top: 3em;
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+
+                a {
+                    text-decoration: none;
+                    color: $main-text;
+                    font-family: $secondary-font;
+                    font-size: 1rem;
+                    -webkit-tap-highlight-color: transparent;
+                    border: solid 1px $main-color;
+                    background-color: $main-bg;
+                    padding: 1em;
+                    cursor: pointer;
+                }
+            }
+
+            &__img {
+                width: 100%;
+                margin-top: 2em;
+                border-radius: 5px;
+
+                img {
+                    border-radius: 5px;
+                    width: 100%;
+                    display: block;
+                    margin-bottom: 1em;
+                }
+            }
+        }
+    }
+
+    .projects-modal-2 {
+        width: 100vw;
+        height: 100vh;
+        background-color: $secondary-bg;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 103;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+        transform: scale(0);
+        opacity: 0;
+        @include transition-2;
+    }
+
+    .projects-modal-3 {
+        width: 100vw;
+        height: 100vh;
+        background-color: $secondary-bg;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 103;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+        transform: scale(0);
+        opacity: 0;
+        @include transition-2;
+    }
+
+    
+}

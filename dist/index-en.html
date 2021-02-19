@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- files -->
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="script.js" defer></script>
+    <!-- icons library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <title>Elie Bissor | Front-End Developer</title>
+</head>
+<body>
+
+    <!-- ============
+         LOADING PAGE
+         ============ -->
+    <div class="loading-page">
+        <img class="loading-page__logo" src="images/logo.png" alt="Loading Page Logo">
+        <div class="loading-page__spinner"></div>
+    </div>
+
+    <!-- ============
+         CURSOR EFFECT
+         ============ -->
+    <div class="cursor"></div>
+    <div class="cursor-2"></div>
+
+    <!-- ============
+         HEADER
+         ============ -->
+    <header class="header" id="top-nav">
+        <!-- large screen navbar -->
+        <div class="nav-lg">
+            <a class="nav-lg-logo" href="index-en.html"><img src="images/logo.png" alt="Logo"></a>
+            <div class="nav-lg-links">
+                <a class="nav-lg__link" href="#home">home</a>
+                <a class="nav-lg__link" href="#about">about</a>
+                <a class="nav-lg__link" href="#projects">my work</a>
+                <a class="nav-lg__link" href="#contact">contact</a>
+                <a class="nav-lg__link nav-lg__btn" href="#">RESUME</a>
+            </div>
+        </div>
+        <!-- mobile nav -->
+        <div class="mobile-nav">
+            <a class="mobile-nav__logo" href="index.html"><img src="images/logo.png" alt="Logo"></a>
+            <!-- settings btn -->
+            <div class="header-btn-container">
+                <div class="nav-btn">
+                    <div class="hamburger"></div>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu modal-->
+        <div class="mobile-menu-modal">
+            <div class="mobile-menu">
+                <div class="nav-menu">
+                    <a class="nav-menu__link" id="mobile-link-1" href="#home">home</a>
+                    <a class="nav-menu__link" id="mobile-link-2" href="#about">about</a>
+                    <a class="nav-menu__link" id="mobile-link-3" href="#projects">my work</a>
+                    <a class="nav-menu__link" id="mobile-link-4" href="#contact">contact</a>
+                    <a class="nav-menu__link" id="mobile-link-5" href="#">RESUME</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+     <!-- ============
+         LANGUAGE
+         ============ -->
+         <a href="index.html">
+            <div class="language">
+                <img src="images/france.png" alt="settings button" class="language-btn">
+            </div>
+        </a>
+        <!-- settings modal -->
+        <div class="modal-settings-wrapper">
+            <div class="modal-settings">
+                
+            </div>
+        </div>
+
+    <!-- ============
+         HOME PAGE
+         ============ -->
+    <section id="home">
+        <div class="home-intro-container">
+            <div class="home-lines"></div>
+            <div class="home-text">
+                <h1 class="home-text__h1">elie bissor</h1>
+                <p class="home-text__p">Front-End Developer based in Paris</p>
+            </div>
+            <div class="home-socials">
+                <a class="home-socials__1" href="https://www.linkedin.com/in/elie-bissor/" target="blank">Linkedin</a>
+                <a class="home-socials__2" href="https://github.com/ElieB77" target="blank">Github</a>
+            </div>
+            <a href="#contact" class="home-contact-btn">Contact Me</a>
+        </div>
+
+        <!-- scroll animation -->
+        <a href="#about">
+            <div class="home-scroll">
+                <div class="home-scroll__animation"></div>
+                <p class="home-scroll__p">Scroll</p>
+            </div>
+        </a>
+    </section>
+
+    <!-- ============
+         ABOUT PAGE
+         ============ -->
+    <section id="about">
+        <div class="about-heading">
+            <hr class="about-heading__hr">
+            <h2 class="about-heading__h2">about</h2>
+        </div>
+        <div class="about-content-container">
+            <div class="about-profile-container">
+                <div class="about-profile">
+                    <img src="images/profile.png" alt="portrait">
+                </div>
+                <div class="about-text-container">
+                    <div class="about-text">
+                        <p class="about-text__p">I'm a self-taught <strong>Front-End developer</strong> with a <strong>passion</strong> for programming and new technologies.<br><br>
+                            I build <strong>responsive</strong> and <strong>functional</strong> websites with the <strong>latest</strong> design and technology <strong>trends</strong>, while paying <strong>great attention to details.</strong><br><br>
+                            Please feel free to <a href="#contact">contact me</a> if you have any questions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-skills">
+                <div class="about-skills-card">
+                    <div class="about-skills-card-img">
+                        <img src="images/skills-1.png" alt=" Responsive Design">
+                        <img class="image-skills-effect" src="images/skills-1-effect.png" alt="Effect">
+                    </div>
+                    <hr class="about-card-hr">
+                    <h3 class="about-skills-card-h3"><i class="fas fa-terminal"></i>Responsive Design</h3>
+                </div>
+
+                <div class="about-card-2">
+                    <div class="about-card-img-2">
+                        <img src="images/skills-2.png" alt="Web Development">
+                        <img class="image-skills-effect-2" src="images/skills-2-effect.png" alt="Effect">
+                    </div>
+                    <hr class="about-card-hr">
+                    <h3 class="about-card-h3-2"><i class="fas fa-terminal"></i>Web Development</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============
+         PROJECTS PAGE
+         ============ -->
+    <section id="projects">
+        <div class="projects-heading">
+            <h2 class="projects-heading__h2">my work</h2>
+            <hr class="projects-heading__hr">
+        </div>
+        <!-- projects list -->
+        <div class="projects-container">
+            <div class="project project-1" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+                <img class="project__img" src="images/myteam.png" alt="first project">
+                <h3 class="project__h3"><i class="fas fa-link"></i>myteam</h3>
+            </div>
+            <div class="project project-2" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+                <img class="project__img" src="images/countries-api.png" alt="second project">
+                <h3 class="project__h3"><i class="fas fa-link"></i>Where in the world?</h3>
+            </div>
+            <div class="project project-3" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+                <img class="project__img" src="images/shortly.png" alt="third project">
+                <h3 class="project__h3"><i class="fas fa-link"></i>Shortly</h3>
+            </div>
+        </div>
+        <!-- project modal -->
+        <div class="projects-modal">
+            <div class="modal modal-1">
+                <div class="modal-container">
+                    <!-- next button -->
+                    <button id="modal-next" class="modal__next">Next project</button>
+                    <!-- close button -->
+                    <button class="modal__close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <!-- project title -->
+                    <h2 class="modal__title">myteam</h2>
+                    <!-- project text -->
+                    <div class="modal__about">
+                        <p class="modal__about-text">"myteam" is a <a href="https://www.frontendmentor.io/solutions" target="blank">Frontend Mentor</a> coding challenge.<br> The challenge was to make the website look as close to the design as possible for smartphone, tablet, and desktop, as well as adding a client-side form validation.
+                        </p>
+                    </div>
+                    <!-- project stack -->
+                    <div class="modal__stack">
+                        <i class="fab fa-html5 html5"></i>
+                        <i class="fab fa-sass sass"></i>
+                        <i class="fab fa-js-square js"></i>
+                        <i class="fab fa-figma figma"></i>
+                        <i class="fab fa-git git"></i>
+                    </div>
+                    <!-- project links -->
+                    <div class="modal__btn">
+                        <a href="https://github.com/ElieB77/Multipage-MyTeam" target="blank">Source code</a>
+                        <a href="https://multipage-my-team-elieb.elieb77.vercel.app/" target="blank">View website</a>
+                    </div>
+                    <!-- project image -->
+                    <div class="modal__img">
+                        <img src="images/myteam-screenshot.png" alt="project image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- second modal -->
+        <div class="projects-modal-2 projects-modal">
+            <div id="modal-2" class="modal-2 modal">
+                <div class="modal-container">
+                    <!-- next button -->
+                    <button id="modal-next-2" class="modal__next">Next project</button>
+                    <!-- close button -->
+                    <button class="modal-2__close modal__close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <!-- project title -->
+                    <h2 class="modal-2__title modal__title">Where in the world?</h2>
+                    <!-- project text -->
+                    <div class="modal-2__about modal__about">
+                        <p class="modal-2__text modal__about-text">"Where in the world?" is a <a href="https://www.frontendmentor.io/solutions" target="blank">Frontend Mentor</a> coding challenge. The challenge was to display countries information by using the <a href="https://restcountries.eu/" target="blank">REST Countries API</a>, to filter countries by region, to look for a specific country, and to choose between a dark and a light mode.
+                    </div>
+                    <!-- project stack -->
+                    <div class="modal-2__stack modal__stack">
+                        <i class="fab fa-html5 html5"></i>
+                        <i class="fab fa-sass sass"></i>
+                        <i class="fab fa-js-square js"></i>
+                        <i class="fab fa-figma figma"></i>
+                        <i class="fab fa-git git"></i>
+                    </div>
+                    <!-- project links -->
+                    <div class="modal-2__btn modal__btn">
+                        <a href="https://github.com/ElieB77/REST-countries-API" target="blank">Source code</a>
+                        <a href="https://rest-countries-api-git-main.elieb77.vercel.app/" target="blank">View website</a>
+                    </div>
+                    <!-- project image -->
+                    <div class="modal-2__img modal__img">
+                        <img src="images/rest-countries-api-git-main.elieb77.vercel.app_index.html(Desktop 1440).png" alt="project image">
+                        <img src="images/rest-countries-api-git-main.elieb77.vercel.app_(Desktop 1440) (1).png" alt="modal project image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- third modal -->
+        <div class="projects-modal-3 projects-modal">
+            <div class="modal-3 modal">
+                <div class="modal-container">
+                    <!-- next button -->
+                    <button class="modal__next" id="modal-next-3">Next project</button>
+                    <!-- close button -->
+                    <button class="modal-3__close modal__close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <!-- project title -->
+                    <h2 class="modal-3__title modal__title">Shortly</h2>
+                    <!-- project text -->
+                    <div class="modal-3__about modal__about">
+                        <p class="modal-3__text modal__about-text">"Shortly" is a <a href="https://www.frontendmentor.io/solutions" target="blank">Frontend Mentor</a> coding challenge. The challenge was to make the website look as close to the design as possible for smartphone, tablet, and desktop. To add an URL shortener by using <a href="https://app.shrtco.de/" target="blank">shrtcode API</a>, and to allow the user to copy the shortened link, by simply clicking on a button.</p>
+                    </div>
+                    <!-- project stack -->
+                    <div class="modal-3__stack modal__stack">
+                        <i class="fab fa-html5 html5"></i>
+                        <i class="fab fa-sass sass"></i>
+                        <i class="fab fa-js-square js"></i>
+                        <i class="fab fa-figma figma"></i>
+                        <i class="fab fa-git git"></i>
+                    </div>
+                    <!-- project links -->
+                    <div class="modal-3__btn modal__btn">
+                        <a href="https://github.com/ElieB77/url-shortening" target="blank">Source code</a>
+                        <a href="https://url-shortening-git-main.elieb77.vercel.app/" target="blank">View website</a>
+                    </div>
+                    <!-- project image -->
+                    <div class="modal-3__img modal__img">
+                        <img src="images/url-screenshot.png" alt="project image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============
+         CONTACT PAGE
+         ============ -->
+    <section id="contact">
+        <div class="contact-heading">
+            <hr class="contact-heading__hr">
+            <h2 class="contact-heading__h2">contact</h2>
+        </div>
+
+        <div class="contact-text">
+            <p class="contact-text__p">For more information, do not hesitate to contact me by using the form below, I'll get back to you as soon as I can.</p>
+        </div>
+
+        <form class="form" action="https://formspree.io/f/xknpelbk" method="POST">
+                <input class="input-email" type="email" name="_replyto" placeholder="Your email...">
+                <p class="error-message">This field is required</p>
+                <textarea class="message" name="message" placeholder="Your message..."></textarea>
+                <p class="error-message-text">This field is required</p>
+            <button class="form-btn" type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- ============
+         FOOTER
+         ============ -->
+    <footer>
+        <a class="footer-logo" href="index.html"><img src="images/logo.png" alt="footer logo"></a>
+
+        <div class="footer-socials">
+            <a href="https://www.linkedin.com/in/elie-bissor/" target="blank">Linkedin</a>
+            <a href="https://github.com/ElieB77" target="blank">Github</a>
+        </div>
+
+        <div class="footer-nav">
+            <a class="footer-nav__link" href="#home">home</a>
+            <a class="footer-nav__link" href="#about">about</a>
+            <a class="footer-nav__link" href="#projects">my work</a>
+            <a class="footer-nav__link" href="#contact">contact</a>
+            <a class="footer-nav__link footer-nav__link-btn" href="">resume</a>
+        </div>
+
+        <p class="footer-credit">Designed and coded by <a href="https://github.com/ElieB77" target="blank">Elie Bissor</a></p>
+
+        <div class="footer-copyright">
+            <small>Copyright &copy 2021 ELIEWD. All rights reserved.</small>
+        </div>
+
+    </footer>
+    
+    <!-- tilt.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js" integrity="sha512-QcYm1q7RbnXmwY7HJ0H7938IS0MalTPYqGUF0fIwQgEjMBt2tqjDBt+R5I+ppdwEohjMdHnFU0H+RxmrGQ8qcg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous"></script>
+</body>
+</html>

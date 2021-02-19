@@ -1,0 +1,118 @@
+@import './base';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    // height: 100vh;
+    background-color: $secondary-bg;
+}
+
+// Typography 
+
+p {
+    line-height: 25px;
+    font-family: $secondary-font;
+    color: $secondary-text;
+}
+
+// loading page
+.loading-page {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 550;
+    perspective: 550rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @include transition-2;
+
+    &__logo {
+        width: 10rem;
+    }
+
+    &__spinner {
+        pointer-events: none;
+        width: 2em;
+        height: 2em;
+        border: .2em solid transparent;
+        border-color: $main-color;
+        border-top-color: $main-bg;
+        border-radius: 50%;
+        animation: spinner 1s linear infinite;
+        display: block;
+        margin-left: 1.5em;
+    }
+}
+
+@keyframes spinner {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.finish-loading {
+    opacity: 0;
+    pointer-events: none;
+}
+
+// cursor
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 64px;
+    height: 64px;
+    border: 2px solid rgba($main-text, 0.1) ;
+    border-radius: 50%;
+    pointer-events: none ;
+    transform: translate(-50%, -50%);
+    // @include transition-1;
+    z-index: 500;
+}
+
+.cursor-2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background-color: $main-color;
+    border-radius: 50%;
+    pointer-events: none ;
+    transform: translate(-50%, -50%);
+    // @include transition-3;
+    z-index: 500;
+}
+
+// settings
+.language {
+    position: fixed;
+    bottom: 3vh;
+    right: 3vh;
+    cursor: pointer;
+    z-index: 200;
+    -webkit-tap-highlight-color: transparent;
+    @include transition-2;
+
+    img {
+        animation: settings 2s infinite linear;
+        width: 2.5rem;
+    }
+}
+
+@keyframes settings {
+    100% {
+        // transform: rotate(360deg);
+    }
+}

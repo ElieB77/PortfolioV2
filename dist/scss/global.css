@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1c1c1e;
+}
+
+p {
+  line-height: 25px;
+  font-family: "Play", sans-serif;
+  color: #a8a2a2;
+}
+
+.loading-page {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  z-index: 550;
+  -webkit-perspective: 550rem;
+          perspective: 550rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.loading-page__logo {
+  width: 10rem;
+}
+
+.loading-page__spinner {
+  pointer-events: none;
+  width: 2em;
+  height: 2em;
+  border: .2em solid transparent;
+  border-color: #00ffc8;
+  border-top-color: black;
+  border-radius: 50%;
+  -webkit-animation: spinner 1s linear infinite;
+          animation: spinner 1s linear infinite;
+  display: block;
+  margin-left: 1.5em;
+}
+
+@-webkit-keyframes spinner {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.finish-loading {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 64px;
+  height: 64px;
+  border: 2px solid rgba(219, 215, 215, 0.1);
+  border-radius: 50%;
+  pointer-events: none;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 500;
+}
+
+.cursor-2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #00ffc8;
+  border-radius: 50%;
+  pointer-events: none;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 500;
+}
+
+.language {
+  position: fixed;
+  bottom: 3vh;
+  right: 3vh;
+  cursor: pointer;
+  z-index: 200;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.language img {
+  -webkit-animation: settings 2s infinite linear;
+          animation: settings 2s infinite linear;
+  width: 2.5rem;
+}
+
+@-webkit-keyframes settings {
+  100% {
+  }
+}
+
+@keyframes settings {
+  100% {
+  }
+}
+/*# sourceMappingURL=global.css.map */

@@ -1,0 +1,187 @@
+header {
+  background-color: #1c1c1e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  z-index: 102;
+  width: 100vw;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+header .mobile-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 91%;
+}
+
+header .mobile-nav__logo img {
+  position: relative;
+  z-index: 103;
+  width: 4rem;
+  -webkit-tap-highlight-color: transparent;
+}
+
+header .mobile-nav .header-btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .mobile-nav .header-btn-container .header-settings {
+  width: 1rem;
+  margin-right: 1em;
+  padding-top: .2em;
+  cursor: pointer;
+}
+
+header .mobile-nav .header-btn-container .header-settings img {
+  width: 100%;
+}
+
+header .mobile-nav .nav-btn {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 3rem;
+  height: 2rem;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+  z-index: 103;
+  -webkit-tap-highlight-color: transparent;
+}
+
+header .mobile-nav .nav-btn .hamburger {
+  width: 25px;
+  height: 3px;
+  background-color: #00ffc8;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
+
+header .mobile-nav .nav-btn .hamburger::before, header .mobile-nav .nav-btn .hamburger::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background-color: #00ffc8;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+header .mobile-nav .nav-btn .hamburger::before {
+  -webkit-transform: translateY(8px);
+          transform: translateY(8px);
+}
+
+header .mobile-nav .nav-btn .hamburger::after {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+
+header .mobile-nav .nav-btn.open .hamburger {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+header .mobile-nav .nav-btn.open .hamburger::before {
+  -webkit-transform: rotate(45deg) translate(35px, -35px);
+          transform: rotate(45deg) translate(35px, -35px);
+}
+
+header .mobile-nav .nav-btn.open .hamburger::after {
+  -webkit-transform: rotate(-45deg) translate(35px, 35px);
+          transform: rotate(-45deg) translate(35px, 35px);
+}
+
+header .mobile-menu-modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  left: 0;
+  top: 0;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+header .mobile-menu-modal .mobile-menu {
+  width: 100vw;
+  height: 30rem;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .mobile-menu-modal .mobile-menu .nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 15rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .mobile-menu-modal .mobile-menu .nav-menu__link {
+  color: #dbd7d7;
+  text-transform: uppercase;
+  font-family: "Lexend Mega", sans-serif;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+header .mobile-menu-modal .mobile-menu .nav-menu #mobile-link-5 {
+  border: solid 1px #00ffc8;
+  text-align: center;
+  padding: 1em 2em;
+}
+
+header .show-nav {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+/*# sourceMappingURL=header.css.map */
