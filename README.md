@@ -2,7 +2,7 @@
 <p align="center">
   <strong>This is the second version of my portfolio</strong>
 </p>
-<p align="center">https://www.eliewd.com/</p>
+<p align="center">https://portfolio-v2-nu-eight.vercel.app/index-en.html</p>
 
 <hr>
 
